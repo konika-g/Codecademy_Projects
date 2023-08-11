@@ -1,0 +1,43 @@
+package myProjects;
+// Create a public class named Calculator
+public class Calculator {
+    // Inside Calculator create a constructor
+    public Calculator(){
+
+    }
+    /* Create a method for addition that returns an int and takes two integer parameters.
+     Inside the method, return the sum of two parameters. */
+    public int add(int a, int b){
+        return a + b;
+    }
+    /* Create a method for subtraction that returns an int and takes two integer parameters.
+     Inside the method, return the difference of two parameters. */
+    public int subtract(int a, int b){
+        return a - b;
+    }
+    /* Create a method for multiplication that returns an int and takes two integer parameters.
+     Inside the method, return the product of two parameters. */
+    public int multiply(int a, int b){
+        return a * b;
+    }
+    /* Create a method for division that returns an int and takes two integer parameters.
+     Inside the method, return the division of two parameters. */
+    public int divide(int a, int b){
+        return a / b;
+    }
+    /* Create a method for modulo division that returns an int and takes two integer parameters.
+     Inside the method, return the modulo of two parameters. */
+    public int modulo(int a, int b){
+        return a % b;
+    }
+    /* Next, create a main method  and crete an object for the Calculator class*/
+    public static void main(String[] args){
+        Calculator basicCalculator = new Calculator();
+        // Test out the methods by calling them with two int parameters
+        System.out.println(basicCalculator.add(4, 3));
+        System.out.println(basicCalculator.subtract(4, 3));
+        System.out.println(basicCalculator.multiply(4, 3));
+        System.out.println(basicCalculator.divide(4, 3));
+        System.out.println(basicCalculator.modulo(4, 3));
+    }
+}
