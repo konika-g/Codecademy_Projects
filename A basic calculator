@@ -1,4 +1,3 @@
-package myProjects;
 // Create a public class named Calculator
 public class Calculator {
     // Inside Calculator create a constructor
