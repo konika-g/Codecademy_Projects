@@ -1,0 +1,25 @@
+public class DNA {
+    String dna;
+    public static void proteinFinder(String dna){
+        dna = dna;
+        int atg = dna.indexOf("ATG");
+        int tga = dna.indexOf("TGA");
+        int sequenceDifference = atg - tga;
+        if(dna.contains("ATG") && dna.contains("TGA") && sequenceDifference % 3 == 0){
+            System.out.println("It contains protein");
+        }
+        else{
+            System.out.println("It does not contain protein");
+        }
+    }
+    public static void main(String[] args){
+        String dna1 = "ATGCGATACGCTTGA";
+        String dna2 = "ATGCGATACGTGA";
+        String dna3 = "ATTAATATGTACTGA";
+        DNA.proteinFinder(dna1);
+        DNA.proteinFinder(dna2);
+        DNA.proteinFinder(dna3);
+
+    }
+
+}
