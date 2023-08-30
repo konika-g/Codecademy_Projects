@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+public class Playlist {
+    public static void main(String[] args) {
+        ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+        desertIslandPlaylist.add("Blank Space");
+        desertIslandPlaylist.add("Photograph");
+        desertIslandPlaylist.add("Counting Stars");
+        desertIslandPlaylist.add("Stitches");
+        desertIslandPlaylist.add("Back to you");
+        desertIslandPlaylist.add("I knew you were trouble");
+        desertIslandPlaylist.add("Dandelions");
+        desertIslandPlaylist.add("Until I found you");
+        desertIslandPlaylist.add("Happier");
+        System.out.println(desertIslandPlaylist);
+        System.out.println("The size of the playlist: " + desertIslandPlaylist.size());
+        desertIslandPlaylist.remove(3);
+        desertIslandPlaylist.remove("Blank Space");
+        System.out.println(desertIslandPlaylist);
+        System.out.println("The size of the playlist: " + desertIslandPlaylist.size());
+
+        int indexOfA = desertIslandPlaylist.indexOf("Photograph");
+        int indexOfB = desertIslandPlaylist.indexOf("Happier");
+        String temp = desertIslandPlaylist.get(indexOfB);
+        desertIslandPlaylist.set(indexOfB, desertIslandPlaylist.get(indexOfA));
+        desertIslandPlaylist.set(indexOfA, temp);
+
+        System.out.println(desertIslandPlaylist);
+        System.out.println("The size of the playlist: " + desertIslandPlaylist.size());
+    }
+}
